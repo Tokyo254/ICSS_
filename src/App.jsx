@@ -1,13 +1,24 @@
-import React from 'react'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/home/home";
+
+
+import ScrollToTopOnPageChange from "./components/ScrollToTopOnPageChange";
+import BackToTop from "./components/BackToTop";
 
 function App() {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <h1 className="text-3xl font-bold text-blue-500">
-        Hello, ICSS Centre!
-      </h1>
-    </div>
-  )
+    <>
+      <BrowserRouter>
+        <Header />
+        <ScrollToTopOnPageChange />
+        <BackToTop />
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </>
+  );
 }
 
-export default App
+export default App;

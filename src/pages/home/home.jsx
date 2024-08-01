@@ -1,4 +1,3 @@
-
 import Contact from "./contact";
 
 const Home = () => {
