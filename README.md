@@ -1,5 +1,9 @@
 # React + Vite
 
+## About
+
+This repository currently contains a simple ICSS Centre placeholder page and a React/Vite frontend scaffold for the organisation’s website.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
